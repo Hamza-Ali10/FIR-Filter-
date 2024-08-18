@@ -1,0 +1,288 @@
+
+
+
+
+
+Tracing Clock CLK
+
+****** Clock Tree (CLK) Structure
+Nr. Subtrees                   : 2
+Nr. Sinks                      : 232
+Nr.          Rising  Sync Pins : 232
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+SDFFQX1M (CK)                           84
+SDFFQNX2M (CK)                          16
+SDFFQX2M (CK)                           132
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+MX2X6M (A)                              1
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (CLK) Cell: (EMPTY) Net: (CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 1 Input_Pin: (mux_clk/U1/A) Output_Pin: (mux_clk/U1/Y) Cell: (MX2X6M) Net: (m_clk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 232
+          Nr. of     Rising  Sync Pins  : 232
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock CLK
+*DEPTH 0: CLK
+ *DEPTH 1: mux_clk/U1(A->Y)
+  (Sync)sum_0_reg_0__0_/CK
+  (Sync)sum_1_reg_1__0_/CK
+  (Sync)sum_1_reg_0__0_/CK
+  (Sync)sum_1_reg_1__1_/CK
+  (Sync)sum_1_reg_0__1_/CK
+  (Sync)sum_1_reg_1__2_/CK
+  (Sync)sum_1_reg_0__2_/CK
+  (Sync)sum_1_reg_1__3_/CK
+  (Sync)sum_1_reg_0__3_/CK
+  (Sync)sum_1_reg_1__4_/CK
+  (Sync)sum_1_reg_0__4_/CK
+  (Sync)sum_1_reg_1__5_/CK
+  (Sync)sum_1_reg_0__5_/CK
+  (Sync)sum_1_reg_1__6_/CK
+  (Sync)sum_1_reg_0__6_/CK
+  (Sync)sum_1_reg_1__7_/CK
+  (Sync)sum_1_reg_0__7_/CK
+  (Sync)sum_1_reg_1__8_/CK
+  (Sync)sum_1_reg_0__8_/CK
+  (Sync)sum_1_reg_1__9_/CK
+  (Sync)sum_1_reg_0__9_/CK
+  (Sync)sum_1_reg_1__10_/CK
+  (Sync)sum_1_reg_0__10_/CK
+  (Sync)sum_1_reg_1__11_/CK
+  (Sync)sum_1_reg_0__11_/CK
+  (Sync)sum_1_reg_1__12_/CK
+  (Sync)sum_1_reg_0__12_/CK
+  (Sync)sum_1_reg_1__13_/CK
+  (Sync)sum_1_reg_0__13_/CK
+  (Sync)sum_2_reg_0__14_/CK
+  (Sync)sum_1_reg_1__14_/CK
+  (Sync)sum_1_reg_0__14_/CK
+  (Sync)sum_2_reg_0__15_/CK
+  (Sync)sum_1_reg_1__15_/CK
+  (Sync)sum_1_reg_0__15_/CK
+  (Sync)sum_2_reg_0__16_/CK
+  (Sync)sum_1_reg_1__16_/CK
+  (Sync)sum_1_reg_0__16_/CK
+  (Sync)sum_2_reg_0__17_/CK
+  (Sync)sum_1_reg_1__17_/CK
+  (Sync)sum_1_reg_0__17_/CK
+  (Sync)sum_2_reg_0__18_/CK
+  (Sync)sum_1_reg_1__18_/CK
+  (Sync)sum_1_reg_0__18_/CK
+  (Sync)sum_2_reg_0__19_/CK
+  (Sync)sum_1_reg_1__19_/CK
+  (Sync)sum_1_reg_0__19_/CK
+  (Sync)sum_2_reg_0__20_/CK
+  (Sync)sum_1_reg_1__20_/CK
+  (Sync)sum_1_reg_0__20_/CK
+  (Sync)sum_2_reg_0__21_/CK
+  (Sync)sum_1_reg_1__21_/CK
+  (Sync)sum_1_reg_0__21_/CK
+  (Sync)sum_2_reg_0__22_/CK
+  (Sync)sum_1_reg_1__22_/CK
+  (Sync)sum_1_reg_0__22_/CK
+  (Sync)sum_2_reg_0__23_/CK
+  (Sync)sum_1_reg_1__23_/CK
+  (Sync)sum_1_reg_0__23_/CK
+  (Sync)sum_2_reg_0__24_/CK
+  (Sync)sum_1_reg_1__24_/CK
+  (Sync)sum_1_reg_0__24_/CK
+  (Sync)sum_2_reg_0__25_/CK
+  (Sync)sum_1_reg_1__25_/CK
+  (Sync)sum_1_reg_0__25_/CK
+  (Sync)sum_2_reg_0__26_/CK
+  (Sync)sum_1_reg_1__26_/CK
+  (Sync)sum_1_reg_0__26_/CK
+  (Sync)sum_2_reg_0__27_/CK
+  (Sync)sum_1_reg_1__27_/CK
+  (Sync)sum_1_reg_0__27_/CK
+  (Sync)sum_2_reg_0__28_/CK
+  (Sync)sum_1_reg_1__28_/CK
+  (Sync)sum_1_reg_0__28_/CK
+  (Sync)sum_1_reg_1__29_/CK
+  (Sync)sum_1_reg_0__29_/CK
+  (Sync)sum_2_reg_0__29_/CK
+  (Sync)sum_1_reg_1__30_/CK
+  (Sync)sum_1_reg_0__30_/CK
+  (Sync)sum_1_reg_1__31_/CK
+  (Sync)sum_1_reg_0__31_/CK
+  (Sync)sum_1_reg_1__32_/CK
+  (Sync)sum_1_reg_0__32_/CK
+  (Sync)sum_1_reg_1__33_/CK
+  (Sync)sum_1_reg_0__33_/CK
+  (Sync)sum_0_reg_3__32_/CK
+  (Sync)sum_0_reg_3__31_/CK
+  (Sync)sum_0_reg_3__30_/CK
+  (Sync)sum_0_reg_3__29_/CK
+  (Sync)sum_0_reg_3__28_/CK
+  (Sync)sum_0_reg_3__27_/CK
+  (Sync)sum_0_reg_3__26_/CK
+  (Sync)sum_0_reg_3__25_/CK
+  (Sync)sum_0_reg_3__24_/CK
+  (Sync)sum_0_reg_3__23_/CK
+  (Sync)sum_0_reg_3__22_/CK
+  (Sync)sum_0_reg_3__21_/CK
+  (Sync)sum_0_reg_3__20_/CK
+  (Sync)sum_0_reg_3__19_/CK
+  (Sync)sum_0_reg_3__18_/CK
+  (Sync)sum_0_reg_3__17_/CK
+  (Sync)sum_0_reg_3__16_/CK
+  (Sync)sum_0_reg_3__15_/CK
+  (Sync)sum_0_reg_3__14_/CK
+  (Sync)sum_0_reg_3__13_/CK
+  (Sync)sum_0_reg_3__12_/CK
+  (Sync)sum_0_reg_3__11_/CK
+  (Sync)sum_0_reg_3__10_/CK
+  (Sync)sum_0_reg_3__9_/CK
+  (Sync)sum_0_reg_3__8_/CK
+  (Sync)sum_0_reg_3__7_/CK
+  (Sync)sum_0_reg_3__6_/CK
+  (Sync)sum_0_reg_3__5_/CK
+  (Sync)sum_0_reg_3__4_/CK
+  (Sync)sum_0_reg_3__3_/CK
+  (Sync)sum_0_reg_3__2_/CK
+  (Sync)sum_0_reg_1__32_/CK
+  (Sync)sum_0_reg_1__31_/CK
+  (Sync)sum_0_reg_1__30_/CK
+  (Sync)sum_0_reg_1__29_/CK
+  (Sync)sum_0_reg_1__28_/CK
+  (Sync)sum_0_reg_1__27_/CK
+  (Sync)sum_0_reg_1__26_/CK
+  (Sync)sum_0_reg_1__25_/CK
+  (Sync)sum_0_reg_1__24_/CK
+  (Sync)sum_0_reg_1__23_/CK
+  (Sync)sum_0_reg_1__22_/CK
+  (Sync)sum_0_reg_1__21_/CK
+  (Sync)sum_0_reg_1__20_/CK
+  (Sync)sum_0_reg_1__19_/CK
+  (Sync)sum_0_reg_1__18_/CK
+  (Sync)sum_0_reg_1__17_/CK
+  (Sync)sum_0_reg_1__16_/CK
+  (Sync)sum_0_reg_1__15_/CK
+  (Sync)sum_0_reg_1__14_/CK
+  (Sync)sum_0_reg_1__13_/CK
+  (Sync)sum_0_reg_1__12_/CK
+  (Sync)sum_0_reg_1__11_/CK
+  (Sync)sum_0_reg_1__10_/CK
+  (Sync)sum_0_reg_1__9_/CK
+  (Sync)sum_0_reg_1__8_/CK
+  (Sync)sum_0_reg_1__7_/CK
+  (Sync)sum_0_reg_1__6_/CK
+  (Sync)sum_0_reg_1__5_/CK
+  (Sync)sum_0_reg_1__4_/CK
+  (Sync)sum_0_reg_1__3_/CK
+  (Sync)sum_0_reg_1__2_/CK
+  (Sync)sum_0_reg_2__32_/CK
+  (Sync)sum_0_reg_2__31_/CK
+  (Sync)sum_0_reg_2__30_/CK
+  (Sync)sum_0_reg_2__29_/CK
+  (Sync)sum_0_reg_2__28_/CK
+  (Sync)sum_0_reg_2__27_/CK
+  (Sync)sum_0_reg_2__26_/CK
+  (Sync)sum_0_reg_2__25_/CK
+  (Sync)sum_0_reg_2__24_/CK
+  (Sync)sum_0_reg_2__23_/CK
+  (Sync)sum_0_reg_2__22_/CK
+  (Sync)sum_0_reg_2__21_/CK
+  (Sync)sum_0_reg_2__20_/CK
+  (Sync)sum_0_reg_2__19_/CK
+  (Sync)sum_0_reg_2__18_/CK
+  (Sync)sum_0_reg_2__17_/CK
+  (Sync)sum_0_reg_2__16_/CK
+  (Sync)sum_0_reg_2__15_/CK
+  (Sync)sum_0_reg_2__14_/CK
+  (Sync)sum_0_reg_2__13_/CK
+  (Sync)sum_0_reg_2__12_/CK
+  (Sync)sum_0_reg_2__11_/CK
+  (Sync)sum_0_reg_2__10_/CK
+  (Sync)sum_0_reg_2__9_/CK
+  (Sync)sum_0_reg_2__8_/CK
+  (Sync)sum_0_reg_2__7_/CK
+  (Sync)sum_0_reg_2__6_/CK
+  (Sync)sum_0_reg_2__5_/CK
+  (Sync)sum_0_reg_2__4_/CK
+  (Sync)sum_0_reg_2__3_/CK
+  (Sync)sum_0_reg_2__2_/CK
+  (Sync)sum_0_reg_0__32_/CK
+  (Sync)sum_0_reg_0__31_/CK
+  (Sync)sum_0_reg_0__30_/CK
+  (Sync)sum_0_reg_0__29_/CK
+  (Sync)sum_0_reg_0__28_/CK
+  (Sync)sum_0_reg_0__27_/CK
+  (Sync)sum_0_reg_0__26_/CK
+  (Sync)sum_0_reg_0__25_/CK
+  (Sync)sum_0_reg_0__24_/CK
+  (Sync)sum_0_reg_0__23_/CK
+  (Sync)sum_0_reg_0__22_/CK
+  (Sync)sum_0_reg_0__21_/CK
+  (Sync)sum_0_reg_0__20_/CK
+  (Sync)sum_0_reg_0__19_/CK
+  (Sync)sum_0_reg_0__18_/CK
+  (Sync)sum_0_reg_0__17_/CK
+  (Sync)sum_0_reg_0__16_/CK
+  (Sync)sum_0_reg_0__15_/CK
+  (Sync)sum_0_reg_0__14_/CK
+  (Sync)sum_0_reg_0__13_/CK
+  (Sync)sum_0_reg_0__12_/CK
+  (Sync)sum_0_reg_0__11_/CK
+  (Sync)sum_0_reg_0__10_/CK
+  (Sync)sum_0_reg_0__9_/CK
+  (Sync)sum_0_reg_0__8_/CK
+  (Sync)sum_0_reg_0__7_/CK
+  (Sync)sum_0_reg_0__6_/CK
+  (Sync)sum_0_reg_0__5_/CK
+  (Sync)sum_0_reg_0__4_/CK
+  (Sync)sum_0_reg_0__3_/CK
+  (Sync)sum_0_reg_0__2_/CK
+  (Sync)sum_0_reg_2__1_/CK
+  (Sync)sum_0_reg_0__1_/CK
+  (Sync)sum_0_reg_3__1_/CK
+  (Sync)sum_0_reg_1__1_/CK
+  (Sync)sum_0_reg_3__0_/CK
+  (Sync)sum_0_reg_1__0_/CK
+  (Sync)sum_0_reg_2__0_/CK
+  (Sync)sum_3_reg_14_/CK
+  (Sync)sum_3_reg_29_/CK
+  (Sync)sum_3_reg_28_/CK
+  (Sync)sum_3_reg_27_/CK
+  (Sync)sum_3_reg_26_/CK
+  (Sync)sum_3_reg_25_/CK
+  (Sync)sum_3_reg_24_/CK
+  (Sync)sum_3_reg_23_/CK
+  (Sync)sum_3_reg_22_/CK
+  (Sync)sum_3_reg_21_/CK
+  (Sync)sum_3_reg_20_/CK
+  (Sync)sum_3_reg_19_/CK
+  (Sync)sum_3_reg_18_/CK
+  (Sync)sum_3_reg_17_/CK
+  (Sync)sum_3_reg_16_/CK
+  (Sync)sum_3_reg_15_/CK

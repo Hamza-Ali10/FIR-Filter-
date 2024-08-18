@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /home/ahesham/Projects/FIR/pnr/FIR_Fliter.enc                     
+#                                              #
+################################################
+restoreDesign /home/ahesham/Projects/FIR/pnr/FIR_Fliter.enc.dat FIR_Fliter
