@@ -1,0 +1,232 @@
+
+                                 Formality (R)
+
+               Version L-2016.03-SP1 for linux64 - Apr 13, 2016 
+
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+  ** Highlights of Formality (R) Version L-2016.03 **
+   - New alternate verification strategies for resolving inconclusive verifications
+   - Automation for deploying alternate strategies
+   - New command to export the mapping of reference to implementation registers
+   - New capability to combine PG and low power information from db libraries with Verilog functional models
+
+   * Please refer to the Formality Release Notes for details and additional enhancements
+
+Build: 4031317
+Hostname: IC (RHEL64)
+Current time: Fri Aug  2 23:26:18 2024
+
+Loading db file '/opt/Synopsys/Formality2016/libraries/syn/gtech.db'
+###################################################################
+########################### Variables #############################
+###################################################################
+set SSLIB "/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db"
+/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db
+set TTLIB "/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db
+set FFLIB "/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db"
+/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db
+###################################################################
+############################ Guidance #############################
+###################################################################
+# Synopsys setup variable
+set synopsys_auto_setup true
+true
+# Formality Setup File
+set_svf "/home/IC/Projects/FIR/syn/FIR_Fliter.svf"
+SVF set to '/home/IC/Projects/FIR/syn/FIR_Fliter.svf'.
+1
+###################################################################
+###################### Reference Container ########################
+###################################################################
+# Read Reference Design Verilog Files
+read_verilog -container Ref  "/home/IC/Projects/FIR/rtl/FIR_Fliter.v"
+No target library specified, default is WORK
+Initializing DesignWare ...
+Initialization Complete
+Loading verilog file '/home/IC/Projects/FIR/rtl/FIR_Fliter.v'
+Warning: The 'declaration initial assignment' construct is not supported.  It will be ignored. (File: /home/IC/Projects/FIR/rtl/FIR_Fliter.v Line: 73)  (FMR_VLOG-038)
+Created container 'Ref'
+Current container set to 'Ref'
+1
+read_verilog -container Ref  "/home/IC/Projects/FIR/rtl/mux2X1.v"
+No target library specified, default is WORK
+Loading verilog file '/home/IC/Projects/FIR/rtl/mux2X1.v'
+1
+# Read Reference technology libraries
+read_db -container Ref [list $SSLIB $TTLIB $FFLIB]
+Loading db file '/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+Loading db file '/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+Loading db file '/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db'
+1
+# set the top Reference Design 
+set_reference_design FIR_Fliter
+Reference design set to 'Ref:/WORK/FIR_Fliter'
+1
+set_top FIR_Fliter
+Setting top design to 'Ref:/WORK/FIR_Fliter'
+Status:   Elaborating design FIR_Fliter   ...  
+Warning: Out of range bit select, index '-1' out of range [0:8]. (File: /home/IC/Projects/FIR/rtl/FIR_Fliter.v Line: 88)  (FMR_ELAB-177)
+Status:   Elaborating design mux2X1   ...  
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  3 unlinked power cell(s) with unread pg pins.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design set to 'Ref:/WORK/FIR_Fliter' with warnings
+Reference design set to 'Ref:/WORK/FIR_Fliter'
+1
+###################################################################
+#################### Implementation Container #####################
+###################################################################
+# Read Implementation Design Files
+read_verilog -netlist -container Imp "/home/IC/Projects/FIR/syn/FIR_Fliter_Netlist.v"
+No target library specified, default is WORK
+Loading verilog file '/home/IC/Projects/FIR/syn/FIR_Fliter_Netlist.v'
+Created container 'Imp'
+Current container set to 'Imp'
+1
+# Read Implementation technology libraries
+read_db -container Imp "/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+Loading db file '/home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+1
+# set the top Implementation Design
+set_implementation_design FIR_Fliter
+Implementation design set to 'Imp:/WORK/FIR_Fliter'
+1
+set_top FIR_Fliter
+Setting top design to 'Imp:/WORK/FIR_Fliter'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  1 unlinked power cell(s) with unread pg pins.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'Imp:/WORK/FIR_Fliter'
+Implementation design set to 'Imp:/WORK/FIR_Fliter'
+1
+###################### Matching Compare points ####################
+match
+Reference design is 'Ref:/WORK/FIR_Fliter'
+Implementation design is 'Imp:/WORK/FIR_Fliter'
+Status:  Checking designs...
+    Warning: 180 (23) undriven nets found in reference (implementation) design; see formality.log for list (FM-399)
+Status:  Building verification models...
+Status:  Processing Guide Commands...
+    Set don't verify point 'Ref:/WORK/FIR_Fliter/SO'
+
+***************************** Guidance Summary *****************************
+                                         Status
+Command                 Accepted   Rejected  Unsupported  Unprocessed  Total
+----------------------------------------------------------------------------
+environment         :          3          0          0          0          3
+mark                :          2          0          0          0          2
+multiplier          :          8          0          0          0          8
+reg_constant        :        546          0          0          0        546
+transformation
+   map              :         24          0          0          0         24
+uniquify            :          1          8          0          0          9
+
+Note: If verification succeeds you can safely ignore unaccepted guidance commands.
+
+SVF files read:
+      /home/IC/Projects/FIR/syn/FIR_Fliter.svf
+
+SVF files produced:
+  /home/IC/Projects/FIR/fm/formality_svf/
+    svf.txt
+****************************************************************************
+
+Status:  Matching...
+    
+*********************************** Matching Results ***********************************    
+ 16 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 3 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+ 539(0) Unmatched reference(implementation) unread points    
+****************************************************************************************
+
+1
+######################### Run Verification ########################
+set successful [verify]
+Reference design is 'Ref:/WORK/FIR_Fliter'
+Implementation design is 'Imp:/WORK/FIR_Fliter'
+    
+*********************************** Matching Results ***********************************    
+ 16 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 3 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+ 539(0) Unmatched reference(implementation) unread points    
+****************************************************************************************
+
+Status:  Verifying...
+
+***************************** Synopsys Auto Setup Summary ******************************
+
+!!! Synopsys Auto Setup Mode was enabled. !!!
+!!! Verification results are valid assuming the following setup constraints: !!!
+
+### RTL Interpretation Setup
+   set hdlin_ignore_parallel_case false
+   set hdlin_ignore_full_case false
+   set hdlin_error_on_mismatch_message false
+   set hdlin_ignore_embedded_configuration true
+
+### Undriven Signal Handling Setup
+   set verification_set_undriven_signals synthesis
+
+### Test Logic Setup
+   set verification_verify_directly_undriven_output false
+   For details see report_dont_verify_points and report_constants
+
+
+For further details on Synopsys Auto Setup Mode: Type man synopsys_auto_setup
+****************************************************************************************
+
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+   ATTENTION: synopsys_auto_setup mode was enabled.
+              See Synopsys Auto Setup Summary for details.
+----------------------------------------------------------
+ Reference design: Ref:/WORK/FIR_Fliter
+ Implementation design: Imp:/WORK/FIR_Fliter
+ 16 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0      16       0       0      16
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+Not Compared
+  Constant reg                                                       232       0     232
+  Don't verify                 0       0       0       0       1       0       0       1
+****************************************************************************************
+1
+if {!$successful} {
+diagnose
+analyze_points -failing
+}
+########################### Reporting ############################# 
+report_passing_points > "passing_points.rpt"
+report_failing_points > "failing_points.rpt"
+report_aborted_points > "aborted_points.rpt"
+report_unverified_points > "unverified_points.rpt"
+start_gui
+     1  source -echo -verbose fm_script.tcl
+1
+#exit
+fm_shell (verify)> 

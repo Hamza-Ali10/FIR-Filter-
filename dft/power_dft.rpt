@@ -1,0 +1,47 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : FIR_Fliter
+Version: K-2015.06
+Date   : Sat Aug  3 03:45:38 2024
+****************************************
+
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+FIR_Fliter             tsmc13_wl30       scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+FIR_Fliter                             5.09e-02 2.98e-02 6.71e+06 8.75e-02 100.0
+  add_113 (FIR_Fliter_DW01_add_3)      6.12e-04 4.02e-04 9.74e+05 1.99e-03   2.3
+  add_114 (FIR_Fliter_DW01_add_2)      4.48e-04 2.85e-04 9.61e+05 1.69e-03   1.9
+  add_120 (FIR_Fliter_DW01_add_1)      2.18e-04 2.44e-04 8.12e+05 1.27e-03   1.5
+  mux_reset (mux2X1_0)                    0.000 6.81e-06 7.73e+03 1.45e-05   0.0
+  mux_clk (mux2X1_1)                   4.45e-02 6.30e-04 1.99e+04 4.51e-02  51.6
+1

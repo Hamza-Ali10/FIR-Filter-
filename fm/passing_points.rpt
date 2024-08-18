@@ -1,0 +1,84 @@
+**************************************************
+Report         : passing_points
+
+Reference      : Ref:/WORK/FIR_Fliter
+Implementation : Imp:/WORK/FIR_Fliter
+Version        : L-2016.03-SP1
+Date           : Fri Aug  2 23:26:21 2024
+**************************************************
+
+16 Passing compare points:
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[0]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[0]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[10]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[10]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[11]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[11]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[12]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[12]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[13]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[13]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[14]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[14]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[15]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[15]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[1]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[1]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[2]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[2]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[3]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[3]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[4]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[4]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[5]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[5]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[6]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[6]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[7]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[7]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[8]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[8]
+
+  Ref  Port       Ref:/WORK/FIR_Fliter/Fliter_Signal[9]
+  Impl Port       Imp:/WORK/FIR_Fliter/Fliter_Signal[9]
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1

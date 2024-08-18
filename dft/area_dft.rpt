@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : area
+Design : FIR_Fliter
+Version: K-2015.06
+Date   : Sat Aug  3 03:45:38 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/Projects/FIR/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          362
+Number of nets:                           860
+Number of cells:                          493
+Number of combinational cells:            120
+Number of sequential cells:               368
+Number of macros/black boxes:               0
+Number of buf/inv:                         18
+Number of references:                      11
+
+Combinational area:               3087.660814
+Buf/Inv area:                      141.204003
+Noncombinational area:            6278.871262
+Macro/Black Box area:                0.000000
+Net Interconnect area:          158480.656372
+
+Total cell area:                  9366.532075
+Total area:                     167847.188447
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------------
+FIR_Fliter                        9366.5321    100.0   141.2040  6278.8713  0.0000  FIR_Fliter
+add_113                           1017.8455     10.9  1017.8455     0.0000  0.0000  FIR_Fliter_DW01_add_3
+add_114                           1017.8455     10.9  1017.8455     0.0000  0.0000  FIR_Fliter_DW01_add_2
+add_120                            883.7017      9.4   883.7017     0.0000  0.0000  FIR_Fliter_DW01_add_1
+mux_clk                             15.2971      0.2    15.2971     0.0000  0.0000  mux2X1_1
+mux_reset                           11.7670      0.1    11.7670     0.0000  0.0000  mux2X1_0
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------------
+Total                                                 3087.6608  6278.8713  0.0000
+
+1
