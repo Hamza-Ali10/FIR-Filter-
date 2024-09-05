@@ -41,7 +41,7 @@ MACRO FIR_Fliter
         END
         AntennaGateArea 0.0 ;
     END SE
-    PIN A[0]
+    PIN Signal_Noise[0]
         DIRECTION INPUT ;
         PORT
         LAYER METAL3 ;
